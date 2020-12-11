@@ -1,0 +1,560 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	height: 100%;
+	font-family:'Montserrat', sans-serif;
+	overflow-x: hidden;
+}
+.clear{
+	clear: both;
+}
+.container{
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.logo{
+	width: 100%;
+	padding: 20px 2%;
+	display: inline-block;
+	margin-bottom: 5px
+}
+
+.menu-desktop{
+	float: right;
+	margin-right: 7px;
+}
+.menu-desktop ul li, a{
+	display: inline-block;
+	text-decoration: none;
+	margin: 0px 9px;
+	color: gray;
+	opacity: 0.9;
+	font-size: 14px
+}
+
+.menu-mobile{
+	width: 0px;
+	height: 0px;
+	font-size: 0px;
+	opacity: 0;
+	margin-top: -150px
+}
+@media screen and (max-width: 768px){
+.menu-desktop{
+	width: 0px;
+	height: 0px;
+	font-size: 0px
+}
+.menu-desktop a{
+	width: 0px;
+	height: 0px;
+	font-size: 0px
+}
+.menu-mobile, a{
+	width: 100px;
+	height: 10px;
+	margin-top: 5px;
+	opacity: 1;
+	font-size: 11px;
+	float: right;
+}
+.menu-mobile{
+	margin-top: -45px;
+	margin-bottom: 50px
+}
+}
+@media screen and (max-width: 425px){
+.menu-mobile{
+	margin-top: 2px;
+	margin-right: calc(50% - 65px);
+	text-align: center;
+	margin-bottom: 55px
+}
+.menu-mobile a{
+	background-color: lightgray;
+	height: 15px
+}
+}
+/*--------MOSAICO---------*/
+.mosaico{
+	margin: 15px 10px
+}
+.mosaico-single{
+	float: left;
+	width: calc(100% / 6);
+}
+
+.img-mosaico-single{
+	width: 100%;
+	padding-top: 100%;
+	background-color: #ccc;
+	border:4px solid white;
+	
+	background-image:url(../img/img_perfil.png);
+	
+}
+/*--------Fim mosaico--------*/
+
+/*-------Serviços----------*/
+.back-servicos{
+	text-align: center;
+	position: relative;
+	top: -30px;
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+}
+.box-master{
+	display: flex;
+	color: white;
+}
+.box{
+	margin: 5px;
+	background-color: #556d80;
+	max-width: 250px;
+	padding: 60px 2% 0px 2%;
+}
+.box-centro{
+	background-color: #607c91;
+	max-width: 300px;
+	padding: 10% 5%;
+	margin: -5px;
+}
+.box-master h3{
+	margin-top: 5px; 
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+.box-master p{
+	font-size: 12px;
+	position: relative;
+	top:5px;
+}
+.dente{
+	background-image: url(../img/icone_dente.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 20px;
+	height: 17px;
+	margin-left: calc(50% - 10px);
+	position: relative;
+	top: 15px
+}
+@media screen and (max-width: 768px){
+.box-master{
+	display: inline-block;
+
+}
+.box-centro{
+	position: relative;
+	max-width: 300px;
+	padding: 15% 5%;
+
+}
+.box{
+	margin: 5px;
+	background-color: #556d80;
+	max-width: 280px;
+	padding: 15px 2% 20px 2%;
+}
+}
+/*------Fim serviços-------*/
+
+/*--------perfil----------*/
+.perfil{
+	display: flex;
+	margin-top: 30px;
+}
+.perfil-info{
+	display: flex;
+	margin: 0 auto
+}
+.texto{
+	font-size: 13px;
+	margin: 20px;
+	max-width: 400px	
+}
+@media screen and (max-width: 768px){
+.perfil-info{
+	display: inline-block;
+	margin: 0 auto
+}
+.perfil{
+	display: inline-block;
+}
+
+.foto{
+	margin-left: calc(50% - 125px);
+	max-width: 250px;
+}
+.texto{
+	width: 90%;
+	max-width: 10000px;
+	
+}
+}
+/*------Fim perfil--------*/
+
+/*--------Videos--------*/
+section.videos .video{
+	padding-top: calc(33.3% * 0.5);
+	width: 33.3%;
+	float: left;
+	border: 5px solid white;
+	position: relative;
+	margin-bottom: 100px;
+}
+
+section.videos iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-shadow: 5px 10px 15px 
+}
+
+@media screen and (max-width: 768px){
+
+section.videos .video{
+	padding-top: calc(80% * 0.5);
+	width: 80%;
+	background-color: gray;
+	float: left;
+	border: 3px solid white;
+	position: relative;
+	left: 10%;
+}
+
+section.videos iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+section.videos .video{
+	margin-bottom: 20px
+}
+}
+/*------Fim Videos------*/
+
+/*------tratamentos------*/
+.tratamentos-container{
+	width: 100%;
+	padding-left: 4%
+}
+
+.tratamentos-container h2{
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 20px;
+	color: #607c91;
+}
+.tratamentos-texto{
+	width: 98%;
+	display: flex;
+	color: gray;
+
+}
+.div1 p{
+	padding-top: 10px;
+	padding-bottom: 50px;
+	font-size: 13px;
+	width: 98%;
+}
+.div1{
+	padding-right:100px;
+	width: 33.3%;
+}
+/*------Fim tratamentos------*/
+
+
+/*------depoimentos------*/
+.depoimentos{
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	text-align: center;
+	color: gray;
+}
+.depoimento1 p{
+	margin: 0 auto;
+	max-width: 390px;
+	margin-top: 30px;
+}
+.depoimento1 span{
+	vertical-align: top;
+	position: relative;
+	top: 10px
+}
+/*----Fim depoimentos----*/
+
+/*-----link intagram------*/
+.link-instagram{
+	background-color: #98a5ae;
+	text-align: center;
+	padding: 30px 0px 50px 0px;
+	margin-top: 50px
+}
+.icone-insta{
+	width: 100%;
+	height: 45px;
+}
+.icone-insta a{
+	margin:0 auto;
+}
+.link-instagram p{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 10px;
+}
+.link-instagram span{
+	font-size: 13px;
+	color: white;
+}
+
+@media screen and (max-width: 768px){
+.icone-insta{
+	width: 100%;
+	height: 45px;
+}
+.icone-insta a{
+	margin-right: calc(50% - 55px)
+}
+}
+
+/*---Fim do link intagram----*/
+
+/*---------Galeria---------*/
+
+.galeria{
+	background-color: lightgray;
+}
+.galeria div{
+	width: 11.1%;
+	padding-top: calc(12% * 0.9);
+	background-color: lightgreen;
+	border: 3px solid white;
+	float: left;
+}
+.vrau:nth-child(1){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(2){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(3){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(4){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(1){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(5){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(6){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(7){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(8){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+.vrau:nth-child(9){
+	background-image:url(../img/img_perfil.png);
+	background-size: cover;
+}
+
+@media screen and (max-width: 1024px){
+.galeria div:nth-of-type(1n+7){
+	display: none;
+}
+
+.galeria div{
+	width: 16.66%;
+	padding-top: calc(17% * 0.9);
+	background-color: lightgreen;
+	border: none;
+	border-left: 2px solid white;
+	border-right: 3px solid white;
+	float: left;
+}
+}
+@media screen and (max-width: 768px){
+.galeria div:nth-of-type(1n+4){
+	display: none;
+}
+.galeria div{
+	width: 33.33%;
+	padding-top: calc(33% * 0.9);
+	background-color: lightgreen;
+	border: none;
+	border-left: 2px solid white;
+	border-right: 3px solid white;
+	float: left;
+}
+}
+/*-------Fim Galeria--------*/
+
+/*-------link-facebook------*/
+.link-facebook{
+	width: 100%;
+	height: 200px;
+	background-color: #576975;
+	text-align: center;
+}
+.icone-fb{
+	width: 100%;
+}
+.icone-fb a{
+	margin:35px auto 5px auto;
+}
+.link-facebook p{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 10px;
+}
+.link-facebook span{
+	font-size: 13px;
+	color: white;
+}
+
+@media screen and (max-width: 768px){
+.link-facebook .acesso{
+	width: 100%;
+}
+.link-facebook p{
+	font-size: 15px;
+	color: white;
+	margin-bottom: 10px;
+}
+.link-facebook span{
+	font-size: 13px;
+	color: white;
+}
+.icone-fb a{
+	width: 100%;
+	height: 50px
+}
+}
+/*-----Fim link-facebook-----*/
+
+/*-------Formulário-------*/
+.contato{
+	color: gray;
+	opacity: 0.6;
+	font-size: 15px;
+	width: 50%;
+	margin: 0 auto;
+}
+.contato h3{
+	margin-top: 60px;
+	text-align: center;
+}
+.formulario div{
+	width: 100%;
+	max-width: 500px;
+	margin: 7px auto;
+	margin-top: 10px;
+}
+.formulario textarea{
+	width: 100%;
+	margin: 0 auto;
+	padding: 50px;
+	border: 1px solid gray;
+	opacity: 0.7
+
+}
+.formulario form div .nome{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	opacity: 0.7;
+	margin-bottom: -10px
+}
+.email-telefone{
+	width: 100%;
+	display: flex;
+}
+.email-telefone input{
+	width: 90%;
+	padding: 10px;
+	border: 1px solid gray;
+	opacity: 0.7
+}
+.email-telefone .telefone{
+	margin-right: -5%
+}
+.enviar{
+	text-align: center;
+}
+.enviar input{
+	padding: 7px 30px 7px 30px;
+	background-color: #576975;
+	color: white;
+	cursor: pointer;
+}
+
+@media screen and (max-width: 580px){
+.contato{
+	width: 80%;
+}
+.email-telefone input{
+	width: 100%;
+}
+.email-telefone{
+	display: inline-block;
+}
+.email-telefone .telefone{
+	margin-right: 0%
+}
+}
+/*-----Fim Formulário-----*/
+
+/*---------Rodapé--------*/
+.rodape{
+	display: flex;
+	background-color: #688293;
+	padding: 50px;
+	margin-top: 70px
+}
+.rodape div{
+	display: inline-block;
+	margin: 0 auto;
+	width: 33.3%;
+
+}
+.rodape div p{
+	display: flex;
+	color: white;
+	font-size: 15px;
+}
+.rodape div h4{
+	display: flex;
+	color: white;
+	margin-bottom: 5px
+}
+
+/*-------Fim Rodapé-------*/
+
+

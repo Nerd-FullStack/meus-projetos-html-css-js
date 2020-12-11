@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+/*----------Logos----------*/
+.backlogo{
+	background: lightgray;
+	width: 100%;
+	min-width: 300px;
+	height: 100px;
+}
+.logo1{
+	width: 150px;
+	height: 50px;
+	background-image: url(img/logo1.png);
+	background-position: center;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	position: relative;
+	left: 9%;
+	top: 20%;
+	float: left;
+}
+.logo2{
+	width: 150px;
+	height: 50px;
+	background-image: url(img/logo2.png);
+	background-position: center;
+	background-size: 150px;
+	background-repeat: no-repeat;
+	float: right;
+	position: relative;
+	right: 9%;
+	top: 20%;
+}
+@media screen and (max-width: 450px){
+.backlogo{
+	height: 150px;
+}
+.logo1, .logo2{
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	top: 15%;
+	left: 0px;
+	right: 0px;
+}
+}
+/*----------Fim logos-------------*/
+.clear{
+	clear: both;
+}
+/*------Imagem e formulário------*/
+.backimagem{
+	width: 100%;
+	min-width: 300px;
+	height: 600px;
+}
+.imagem{
+	width: 80%;
+	height: 600px;
+	margin: 0 10%;
+	background-image: url(img/bg-form.jpg);
+	background-size: cover;
+}
+
+.formulario h3{
+	background-color: lightgray;
+	opacity: 0.7;
+	width: 35%;
+	min-width: 300px;
+	max-width: 350px;
+	padding: 20px 10px;
+ 	font-size: 18px;
+ 	position: relative;
+ 	top: 20px;
+ 	right: 30px;
+ 	font-weight: normal;
+ 	
+}
+.formulario form{
+	color: white;
+	background-color: gray;
+	opacity: 0.8;
+	width: 35%;
+	min-width: 300px;
+	max-width: 350px;
+	height: 450px;
+	max-height: 450px;
+	padding: 20px 10px;
+	position: relative;
+ 	top: 20px;
+ 	right: 30px
+}
+.formulario input{
+	width: 98%;
+	height: 40px;
+	margin: 0 1%;
+	padding-left: 5px;
+	margin-bottom: 40px;
+}
+.enviar input{
+	margin-top: 10px;
+	margin-bottom: 20px;
+	background-color: #093C50;
+	color: white;
+	font-size: 20px;
+}
+@media screen and (max-width: 820px){
+	.formulario form{
+		margin:0 auto;
+		width: 60%;
+		min-width: 0;
+		position: relative;
+		right: 0;
+		left:0;
+		height: 420px;
+	}
+	.formulario h3{
+		margin:0 auto;
+		width: 60%;
+		min-width: 0;
+		position: relative;
+		right: 0;
+		left:0;
+	}
+}
+@media screen and (max-width: 600px){
+	.formulario form{
+		margin:0 auto;
+		width: 90%;
+		min-width: 0;
+		position: relative;
+		right: 0;
+		left:0;
+	}
+	.formulario h3{
+		margin:0 auto;
+		width: 90%;
+		min-width: 0;
+		position: relative;
+		right: 0;
+		left:0;
+		text-align: center;
+		padding: 10px 5px;
+	}
+}
+@media screen and (max-width: 450px){
+.imagem{
+	width: 100%;
+	margin: 0
+}
+}
+/*---------Imagem e formulario---------*/
+
+/*---------Chamada-----------*/
+
+.chamada{
+	width: 80%;
+	background:#093C50;
+	text-align: center;
+	margin: 0 auto;
+	padding: 60px 0;
+	color: white;
+}
+.chamada p{
+	font-size: 19px;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 450px){
+.chamada{
+ 	width: 100%;
+ 	min-width: 300px;
+ 	padding: 40px 0px;
+}
+}
+/*-------Fim chamada-------*/
+
+.arrow{
+	width: 100%;
+	position: absolute;
+	margin-top: -30px;
+}
+
+/*---------mosaico--------*/
+.mosaicos{
+	width: 80%;
+	margin: 0 auto;
+	height: 400px;
+	display: flex;
+}
+.mosaico1{
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 60%;
+	height: 400px;
+}
+.texto1{
+	width: 40%;
+	height: 400px;
+	word-wrap: break-word;
+	background-color: #8899b5;
+	padding: 10% 5%
+}
+
+@media screen and (max-width: 915px){
+.texto1{
+	padding: 12% 0%;
+	text-align: center;
+}
+.mosaico1{
+	background-position: center right
+}
+}
+
+@media screen and (max-width: 720px){
+.mosaicos{
+	width: 80%;
+	flex-direction: column;
+}
+.mosaico1{
+	width: 100%;
+	order: 1
+
+}
+.texto1{
+	width: 100%;
+	order: 2;
+	padding: 8% 5%
+}
+}
+@media screen and (max-width: 450px){
+.mosaicos{
+	width: 100%
+}
+}
+
+/*-------Fim mosaico-------*/
+@media screen and (max-width: 450px){
+	
+	}
+	
+	.rodape div{
+		width: 80%;
+		height: 2px;
+		background: gray;
+		margin: 20px auto;
+	
+	}
+	.rodape img{
+		margin-left:calc(50% - 115px);
+		
+	}

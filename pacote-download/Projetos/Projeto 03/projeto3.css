@@ -1,0 +1,453 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+body{
+	height: 100%;
+	font-family: Open sans;
+}
+.clear{
+	clear: both;
+}
+/*-----Fundo e logo------*/
+.backimg{
+	background-image: url(img/capa.png);
+	background-size: cover;
+	background-position: 35%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 700px;
+}
+.logo{
+	color:lightgray;
+	float: left;
+	margin-top: 40px;
+	margin-left: 80px;
+	font-size: 23px;
+}
+@media screen and (max-width: 768px){
+.logo{
+	font-size: 23px;
+	margin-top: 40px;
+	margin-left: calc(50% - 100px)
+}
+}
+/*-------fim do fundo e logo-------*/
+
+/*-------sidbar--------*/
+.links{
+	width: 100%
+}
+.links li{
+	display: inline-block;
+	margin-top: 50px;
+	margin-right: 30px;
+}
+.links ul{
+	float: right;
+	margin-right: 40px;
+}
+.links a{
+	color: white;
+	text-decoration: none;
+}
+@media screen and (max-width: 768px){
+.menu-mobile{
+	background-image: url(img/open-menu.png);
+	background-size: 50%;
+	background-repeat: no-repeat;
+	float: right;
+	margin-left: 89%;
+	height: 40px;
+	overflow: hidden;
+	cursor: pointer;
+	padding: 4px;
+}
+.links{
+	position: absolute;
+	position: fixed;
+	top: 80px;
+	z-index: 2
+}
+.links li{
+	display: inline-block;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+.links ul{
+	margin-top: 30px;
+	float: right;
+	margin-right: 10px;
+}
+.links a{
+	color: white;
+	text-decoration: none;
+}
+.menu-mobile:hover{
+	transition: 2s;
+	height: 185px;
+	background-color: gray;
+	border-radius: 5px 5px 15px 15px;
+}
+}
+@media screen and (max-width: 470px){
+.backimg{
+	height: 600px
+}
+.links{
+	font-size:16px;
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.links ul{
+	margin-right: 3px
+}
+}
+
+/*-------fim sidbar--------*/
+
+/*-------chamada---------*/
+.chamada{
+	color: white;
+	float: right;
+	margin-top: 170px;
+	margin-right: 10%;
+	width: 50%;
+	min-width: 300px
+}
+.chamada h1{
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+@media screen and (max-width: 768px){
+.chamada{
+	width: 70%;
+	min-width: 0;
+	float:none;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: 50px;
+}
+}
+@media screen and (max-width: 470px){
+.chamada h1{
+	font-size: 29px;
+}
+}
+@media screen and (max-width: 350px){
+.chamada h1{
+	font-size: 25px;
+}
+.chamada{
+	margin:0 auto;
+	margin-top: 70px;
+	width: 90%
+}
+}
+/*------Fim chamada------*/
+
+/*-------Anuncio--------*/
+.backanuncio{
+	width: 100%;
+	height: 400px;
+	max-height: 500px;
+	background-color: purple;
+	overflow-y: hidden;
+}
+.texto{
+	width: 100%;
+	max-width: 400px;
+	margin-left: 8%;
+	margin-top: 50px;
+	float: left;
+	color: white;
+	list-style-position: inside;
+}
+.texto h1{
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+.texto p{
+	font-size: 18px
+}
+.texto a{
+	text-decoration: none;
+	color: white;
+	background: darkorange;
+	padding: 10px 10px;
+	float: left;
+	border-radius: 30px;
+	margin: 15px 10px;
+}
+.imagem img{
+	width: 450px;
+	height: 450px;
+	position: absolute;
+	left: 45%;
+	top: 670px
+}
+@media screen and (max-width: 768px){
+.imagem img{
+	width: 0;
+	height: 0;
+}	
+}
+
+/*------fim anuncio-------*/
+
+/*--------Slogan---------*/
+.slogan{
+	text-align: center;
+	width: 100%;
+	height: 600px;
+	max-height: 600px;
+	background-color: lightgray;
+	overflow-y:hidden;
+}
+.texto-slogan{
+	width: 70%;
+	margin: 40px auto;
+	color: purple;
+	font-weight: normal;
+}
+.img-slogan img{
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	max-height: 500px;
+	z-index: 1;
+	box-shadow: 8px 8px 5px gray
+}
+
+/*--------fim Slogan---------*/
+
+/*--------Portifólio---------*/
+.portifolio{
+	width: 100%;
+	height: auto;
+}
+.divport1{
+ 	width: 50%;
+ 	height: 500px;
+ 	display: inline-block;
+ 	background-color: purple;
+ 	color: white;
+ 	padding-top: 7%;
+}
+.divport1 p{
+	width: 70%;
+	margin-left: 20px;
+}
+.divport1 h2{
+	margin-left: 20px;
+}
+.divport2{
+ 	width: 50%;
+ 	height: 500px;
+	display: inline-block;
+	color: black;
+	float: right;
+	padding-top: 7%;
+}
+.divport2 h2{
+	margin-left: 15px;
+	display: inline-block;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.divport2 p{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 70%;
+}
+.divport2 span{
+	width: 20px;
+	height: 20px;
+	background-color: lightgray;
+	cursor: pointer;
+	float: left;
+	border-radius: 20px;
+	margin-left: 5px;
+	margin-top: 8px;
+}
+.divport2 span:first-of-type{
+	background-color: gray;
+	margin-left: 20px
+}
+p.fundador{
+	margin-left: 20px;
+	font-size: 14px;
+	margin-top: -30px;
+	opacity: 0.7;
+} 
+.foto{
+	width: 70px;
+	height:70px;
+	background-image: url(img/patranus.jpg);
+	background-size: 70px;
+	background-position: center left;
+	background-repeat: no-repeat;
+	border-radius: 40px;
+	display: inline-block;
+}
+@media screen and (max-width: 768px){
+.divport1{
+	width: 100%;
+	height: 400px;
+}
+.divport1 p{
+	font-size: 20px;
+	width: 80%;
+	margin-left: 20px;
+}
+.divport1 h2{
+	font-size: 25px;	
+	margin-left: 10px
+}
+
+.divport2{
+	width: 100%;
+	height: 400px;
+	padding-top: 40px;
+}
+.divport2 h2{
+	margin-left: 10px;
+	display: inline-block;
+	margin-bottom: 25px;
+	margin-right: 5px;
+	font-size: 25px;
+}
+
+.divport2 p{
+	margin-left: 20px;
+	margin-top: 20px;
+	width: 70%;
+	font-size: 20px;
+}
+p.fundador{
+	margin-left: 10px;
+	font-size: 16px;
+	margin-top: -30px;
+	opacity: 0.7
+}
+}
+/*--------Fim Portifólio---------*/
+
+/*--------Mapa e formulario---------*/
+.form-map{
+	width: 100%;
+	height: auto;
+	background-color: #6e2f87;
+	color: white;
+	margin-top: -5px;
+}
+.formulario{
+	width: 50%;
+	height: 500px;
+	padding-top: 50px;
+	padding-left: 50px;
+	float: left;
+}
+.formulario p{
+	width: 70%;
+	margin: 5px 0
+}
+.formulario input{
+	width: 90%;
+    margin-top: 10px;
+    padding: 15px;
+}
+.formulario textarea{
+	width: 90%;
+	margin-top: 10px;
+	padding: 10px 0px 50px 0px
+}
+.formulario input[type=submit]{
+	background-color:#e88b00;
+	color: white;
+	width: 100px;
+	border-radius: 40px;
+	border: 0;
+	margin-top: 5px
+}
+
+.backmapa{
+	width: 50%;
+	height: auto;
+}
+.backmapa h2{
+	padding-top: 20px
+}
+.mapa{
+	width: 450px;
+	height: 450px;
+	border: 5px solid gray;
+	background-color: white;
+	margin: 20px auto;
+}
+@media screen and (max-width: 1024px){
+.mapa{
+	width: 350px;
+	height: 350px;
+	margin: 30px auto;
+}
+
+}
+@media screen and (max-width: 768px){
+.formulario{
+	width: 100%;
+	text-align: center;
+	float: none;
+	padding: 60px 0 0 0
+}	
+.formulario p{
+	margin: 0 auto
+}
+.formulario input{
+	width: 70%
+}
+.formulario textarea{
+	width: 70%
+}
+.backmapa{
+	width: 100%;
+	height: auto;
+}
+.mapa{
+	width: 450px;
+	height: 450px;
+}
+}
+@media screen and (max-width: 460px){
+.mapa{
+	width: 280px;
+	height: 280px;
+}
+.formulario input{
+	width: 90%
+}
+.formulario textarea{
+	width: 90%
+}
+}
+/*--------Fim Mapa e formulario---------*/
+
+/*----------------Rodapé-------------*/
+.rodape{
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+.rodape p{
+	padding-bottom: 5px 
+}
+.rodape div{
+	width: 95%;
+	height: 2px;
+	background-color: lightgray;
+	margin: 0 auto
+}
+/*----------------Fim Rodapé-------------*/
