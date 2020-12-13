@@ -128,32 +128,29 @@
 .mosaico-master{
 	width: 80%;
 	margin: 0 auto;
-	height: 400px;
-	
 }
-.mosaicos{
-	display: flex;
-}
-.mosaicos div:nth-child(1n+0){
-	
-	color: white;
-	
-}
-.mosaico1{
+
+.mosaico1, .mosaico2{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 60%;
 	height: 400px;
+	
 }
-.texto1{
+.texto1, .texto2{
 	width: 40%;
 	height: 400px;
 	word-wrap: break-word;
 	background-color: #8899b5;
 	padding: 10% 5%;
-
+	
 }
-
+.mosaico2{
+	order: 2;
+}
+.mosaico-container{
+	display:flex;
+}
 
 footer{
 	background-color: lightgray;
@@ -178,16 +175,16 @@ footer img{
 .chamada{
 	width: 100%;
 }
-.mosaicos{
+.mosaico-master{
 	width: 100%;
 }
-.mosaico1{
+.mosaico1, .mosaico2{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 60%;
 	height: 400px;
 }
-.texto1{
+.texto1, .texto2{
 	width: 40%;
 	height: 400px;
 	background-color: #8899b5;
@@ -198,22 +195,21 @@ footer img{
 }
 }
 @media screen and (max-width: 768px){
-	.mosaicos{
-		width: 100%;
-		margin: 0 auto;
-		height: 400px;
+
+	.mosaico-container{
 		display: inline-block;
 	}
-	.mosaico1{
+	.mosaico1, .mosaico2{
 		background-size: cover;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 400px;
-		order: 1;
-	}
-	.texto1{
-		width: 100%;
 		
+	}
+	.texto1, .texto2{
+		width: 100%;
+		max-height: 280px;
+		padding: 9% 20px 0px 20px;
 	}
 }
 
