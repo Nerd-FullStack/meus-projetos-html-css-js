@@ -134,6 +134,7 @@ body{
 .portifolio{
 	width: 100%;
 	height: auto;
+	display: flex;
 }
 .divport1{
  	width: 50%;
@@ -141,7 +142,7 @@ body{
  	display: inline-block;
  	background-color: purple;
  	color: white;
- 	padding-top: 7%;
+ 	padding-top: 8%;
 }
 .divport1 p{
 	width: 70%;
@@ -153,43 +154,46 @@ body{
 .divport2{
  	width: 50%;
  	height: 500px;
-	display: inline-block;
 	color: black;
-	float: right;
 	padding-top: 7%;
 }
 .divport2 h2{
 	margin-left: 15px;
-	display: inline-block;
-	margin-bottom: 30px;
 	margin-right: 10px;
-	display: inline-block;
 }
 .divport2 p{
 	margin-left: 20px;
 	margin-top: 20px;
 	width: 70%;
 }
+.bolinhas{
+	display: flex;
+}
 .divport2 span{
 	width: 20px;
 	height: 20px;
 	background-color: lightgray;
 	cursor: pointer;
-	float: left;
 	border-radius: 20px;
 	margin-left: 5px;
 	margin-top: 8px;
 }
 .divport2 span:first-of-type{
 	background-color: gray;
-	margin-left: 20px
+	margin-left: 20px;
 }
 p.fundador{
-	margin-left: 20px;
-	font-size: 14px;
-	margin-top: -30px;
-	opacity: 0.7;
+	margin-top: 0px;
+	font-size: 12px;
+	width: 100%;
 } 
+.capsula-foto{
+	display: flex;
+	align-items: center;
+}
+.capsula-fundador{
+	overflow-y: hidden;
+}
 .foto{
 	width: 70px;
 	height:70px;
@@ -198,7 +202,7 @@ p.fundador{
 	background-position: center left;
 	background-repeat: no-repeat;
 	border-radius: 40px;
-	display: inline-block;
+	
 }
 
 /*--------Fim Portifólio---------*/
@@ -293,7 +297,6 @@ hr{
 		height: 600px;
 	}
 	.logo{
-		float: none;
 		margin-left: 0px;
 		text-align: center;
 	}
@@ -321,7 +324,6 @@ hr{
 	}
 	.links ul{
 		margin-top: 30px;
-		float: right;
 		margin-right: 10px;
 	}
 	.links a{
@@ -334,21 +336,21 @@ hr{
 		background-color: gray;
 		border-radius: 5px 5px 15px 15px;
 	}
-	
+
 	.chamada{
 		width: 70%;
 		min-width: 0;
-		float:none;
 		margin-top: 150px;
 		margin-left: auto;
 		margin-right: 50px;
 	}
-
 	.imagem img{
 		width: 0;
 		height: 0;
 	}	
-		
+	.portifolio{
+		display: inline-block;
+	}
 	.divport1{
 		width: 100%;
 		height: 400px;
@@ -360,7 +362,7 @@ hr{
 	}
 	.divport1 h2{
 		font-size: 25px;	
-		margin-left: 10px
+		margin-left: 10px;
 	}
 	
 	.divport2{
@@ -368,27 +370,13 @@ hr{
 		height: 400px;
 		padding-top: 40px;
 	}
-	.divport2 h2{
-		margin-left: 10px;
-		display: inline-block;
-		margin-bottom: 25px;
-		margin-right: 5px;
-		font-size: 25px;
-	}
 	
-	.divport2 p{
+	.divport2 .port-frase{
 		margin-left: 20px;
-		margin-top: 20px;
-		width: 70%;
+		margin-top: 30px;
+		width: 80%;
 		font-size: 20px;
 	}
-	p.fundador{
-		margin-left: 10px;
-		font-size: 16px;
-		margin-top: -30px;
-		opacity: 0.7
-	}
-
 	.form-map{
 		display: inline-block;
 	}	
@@ -398,10 +386,10 @@ hr{
 		padding: 60px 0 0 0;
 	}	
 	.formulario p{
-		margin: 0 auto
+		margin: 0 auto;
 	}
 	.formulario input{
-		width: 70%
+		width: 70%;
 	}
 	.formulario textarea{
 		width: 70%;
@@ -441,6 +429,7 @@ hr{
 		font-size: 27px;
 	}
 	
+	
 }
 
 @media screen and (max-width: 460px){
@@ -467,6 +456,7 @@ hr{
 	.formulario textarea{
 		width: 90%;
 	}
+
 }
 @media screen and (max-width: 350px){
 	.backimg{
@@ -490,8 +480,43 @@ hr{
 	.slogan{
 		height: 550px;
 	}
+	.divport1{
+		height: auto;
+	}
+	.divport1 h2{
+		text-align: center;
+		margin: 0;
+	}
+	.divport1 p{
+		text-align: center;
+		width: 100%;
+		padding: 7px;
+		margin: 0px 0px 15px 0px;
+	}
+	.divport2 .port-frase{
+		margin-top: 10px;
+		font-size: 19px;
+	}
 	.mapa{
 		width: 230px;
 		height: 230px;
+	}
+	.divport2{
+		height: 500px;
+		padding-top: 15px;
+	}
+	.foto{
+		display: none;
+	}
+	.divport2 .foto-470px{
+		background-image: url(img/patranus.jpg);
+		width: 150px;
+		height: 150px;
+		background-size: 150px;
+		background-repeat: no-repeat;
+		background-position:bottom;
+		border-radius: 150px;
+		margin-left: 10%;
+		margin-bottom: 10px;
 	}
 }
